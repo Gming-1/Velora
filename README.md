@@ -24,6 +24,65 @@
 
 ---
 
+# 📚 VELORA — Setup Guide
+
+## 1. Requirements
+
+- Python 3.10+
+- Node.js 18+
+- [Ollama](https://ollama.com) installed locally
+
+## 2. Clone
+
+```bash
+git clone https://github.com/Gming-1/Velora.git
+cd Velora
+```
+
+## 3. Ollama
+
+```bash
+ollama serve
+ollama pull llama3
+ollama pull nomic-embed-text
+```
+
+## 4. Backend
+
+```bash
+cd backend
+pip install -r requirements.txt
+```
+
+Add your PDFs to `backend/books/`, then build the vector DB:
+
+```bash
+python popu_db.py
+```
+
+Run the API:
+
+```bash
+python -m uvicorn app:app --reload --port 8000 
+```
+
+## 5. Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Runs on `http://localhost:5173`, calling `POST http://localhost:8000/api/chat` with `{"question": "..."}`.
+
+## 6. Adding more books later
+
+```bash
+python popu_db.py           # adds new PDFs only
+python popu_db.py --reset   # wipes and rebuilds the DB
+```
+
 ## 📁 Project Structure
 
 ```text
