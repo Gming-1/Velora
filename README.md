@@ -13,7 +13,7 @@
 **VELORA** is a RAG (Retrieval-Augmented Generation) application designed to search and answer questions based on a local library of books and PDF documents using custom embeddings and vector search.
 
 <p align="center">
-  <img src="assets/velora-demo.gif" alt="VELORA Demo" width="900"/>
+  <img src="Velora.gif" alt="VELORA Demo" width="900"/>
 </p>
 
 ---
