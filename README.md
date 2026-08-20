@@ -1,5 +1,15 @@
 # 📚 VELORA — The Handy Book Assistant
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+  <img src="https://img.shields.io/badge/ChromaDB-FF6F00?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge" />
+</p>
+
 **VELORA** is a RAG (Retrieval-Augmented Generation) application designed to search and answer questions based on a local library of books and PDF documents using custom embeddings and vector search.
 
 ---
@@ -15,12 +25,12 @@
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-| :--- | :--- |
-| **Frontend** | React (Vite), Tailwind CSS |
-| **Backend** | Python, FastAPI |
-| **Vector DB** | ChromaDB (`chroma/`) |
-| **Data Source** | Local PDFs (`books/`) |
+| Layer           | Technology                 |
+| :-------------- | :------------------------- |
+| **Frontend**    | React (Vite), Tailwind CSS |
+| **Backend**     | Python, FastAPI            |
+| **Vector DB**   | ChromaDB (`chroma/`)       |
+| **Data Source** | Local PDFs (`books/`)      |
 
 ---
 
@@ -28,9 +38,9 @@
 
 ## 1. Requirements
 
-- Python 3.10+
-- Node.js 18+
-- [Ollama](https://ollama.com) installed locally
+* Python 3.10+
+* Node.js 18+
+* [Ollama](https://ollama.com) installed locally
 
 ## 2. Clone
 
@@ -103,3 +113,4 @@ Velora/
 │   └── vite.config.js
 │
 └── README.md
+```
