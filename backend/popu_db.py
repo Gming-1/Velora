@@ -5,7 +5,7 @@ from langchain_community.document_loaders.pdf import PyPDFDirectoryLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 from langchain_chroma import Chroma
-from backend.embedding import get_embedding_function
+from embedding import get_embedding_function
 
 
 CHROMA_PATH = "chroma"
